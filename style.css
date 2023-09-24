@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --theme-color: rgb(18, 100, 150);
+    --body-color: #0f0f0f;
+    --text-color: #919295;
+    --card-color: #1e1e22;
+    --btn-color: #323232;
+}
+
+.light_theme{
+    --theme-color: rgb(31, 141, 210);
+    --body-color: #afafaf;
+    --text-color: #7b7c7e;
+    --card-color: #ffffff;
+    --btn-color: #404042;
+    background: #00000045;
+    .main::before{
+        position: absolute;
+        content: " ";
+        background: #00000012;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+    }
+    .main .wrapper nav .toggle_point .mode{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .main .wrapper nav .toggle_point .mode .text span {
+        font-size: 18px;
+        color: var(--text-color);
+    }
+    .main .wrapper nav .toggle_point .mode .text .active_light {
+        color: var(--theme-color);
+    }
+    .main .wrapper .inner_group .info_card .title{
+        font-size: 22px;
+        font-family: "Rubik", sans-serif;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+    .main .wrapper .inner_group .home .sub_title {
+        margin-top: 20px;
+        color: white;
+    }
+    .main .wrapper .inner_group .home .intro .des {
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 1.8;
+        color: white;
+    }
+    .main .wrapper .inner_group .home .counter {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main .wrapper .inner_group .home .counter .item p {
+        font-size: 18px;
+        color: white;
+    }
+    .main .wrapper .inner_group .info_card .social_icons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main .wrapper .inner_group .info_card .social_icons ul {
+        gap: 12px;
+        display: flex;
+    }
+    
+    .main .wrapper .inner_group .info_card .social_icons ul li {
+        list-style: none;
+    }
+    
+    .main .wrapper .inner_group .info_card .social_icons ul li a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--btn-color);
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .main .wrapper .inner_group .info_card .social_icons ul li i {
+        display: block;
+        font-size: 28px;
+        color: white;
+        transition: .2s linear;
+    }
+    
+    .main .wrapper .inner_group .info_card .social_icons ul li:hover i {
+        color: var(--theme-color);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 9;
+    padding: 0 0;
+    background-image: url(Sunrise.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main::before{
+    position: absolute;
+    content: " ";
+    background: #00000098;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.main .container{
+    padding: 30px;
+    position: static;
+    max-width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main .wrapper{
+    display: block;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.main .wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-color);
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.main .wrapper nav .logo img {
+    width: 100px;
+    border-radius: 40px;
+}
+
+.main .wrapper nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main .wrapper nav ul li {
+    list-style: none;
+}
+
+.main .wrapper nav ul li a{
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.main .wrapper nav ul li a.active_dark,
+.main .wrapper nav ul li a:hover{
+    color: var(--theme-color);
+}
+
+.main .wrapper nav .toggle_point{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main .wrapper nav .toggle_point .mode{
+    display: flex;
+    gap: 15px;
+}
+
+.main .wrapper nav .toggle_point .mode .text span {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.main .wrapper nav .toggle_point .mode .text .active_dark{
+    color: var(--theme-color);
+}
+
+#light_icon {
+    font-size: 18px;
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.main .wrapper nav .toggle_point .mode .menu_icon {
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.main .wrapper nav .toggle_point .mode .menu_icon:hover {
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group {
+    margin-top: 60px;
+    display: flex;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 60px;
+}
+
+.main .wrapper .inner_group .info_card {
+    background: var(--card-color);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.main .wrapper .inner_group .info_card .title {
+    font-size: 22px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.main .wrapper .inner_group .info_card .title .theme {
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .info_card .sub_title {
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.main .wrapper .inner_group .info_card .img {
+    margin-top: 20px;
+    width: 338px;
+    height: 327px;
+    border-radius: 60px;
+}
+
+.main .wrapper .inner_group .info_card .mail {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.main .wrapper .inner_group .info_card .social_icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .wrapper .inner_group .info_card .social_icons ul {
+    gap: 12px;
+    display: flex;
+}
+
+.main .wrapper .inner_group .info_card .social_icons ul li {
+    list-style: none;
+}
+
+.main .wrapper .inner_group .info_card .social_icons ul li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--btn-color);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main .wrapper .inner_group .info_card .social_icons ul li i {
+    display: block;
+    font-size: 28px;
+    color: var(--text-color);
+    transition: .2s linear;
+}
+
+.main .wrapper .inner_group .info_card .social_icons ul li:hover i {
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .info_card .my_btn {
+    margin-top: 40px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.main .wrapper .inner_group .info_card .my_btn a {
+    text-decoration: none;
+    color: var(--theme-color);
+    padding: 8px 35px;
+    border-radius: 100px;
+    background: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    font-size: 16px;
+    color: var(--card-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.main .wrapper .inner_group .info_card .my_btn a:hover {
+    background: transparent;
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .home .tag {
+    border: 1px solid var(--text-color);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 6px 30px;
+    color: #fff;
+}
+
+.main .wrapper .inner_group .home .tag .box {
+    display: flex;
+    gap: 10px;
+}
+
+.main .wrapper .inner_group .home .tag .box i {
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .home .intro {
+    margin-top: 40px;
+}
+
+.main .wrapper .inner_group .home .sub_title {
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.main .wrapper .inner_group .home .title {
+    margin-top: 1px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+}
+
+.main .wrapper .inner_group .home .title span {
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .home .intro .des {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.main .wrapper .inner_group .home .counter {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .wrapper .inner_group .home .counter .item h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--theme-color);
+}
+
+.main .wrapper .inner_group .home .counter .item p {
+    font-size: 18px;
+    color: var(--text-color);
+}

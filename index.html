@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikunj Mathur - Portfolio</title>
+    <script src="https://kit.fontawesome.com/ab8e5fb904.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="container">
+                <div class="wrapper">
+                    <header>
+                        <nav>
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="Nikunj.png" alt="Logo">
+                                </a>
+                            </div>
+                            <ul>
+                                <li><a href="#" class="active">
+                                        <i class="fa-regular fa-house"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fa-regular fa-address-card"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fa-sharp fa-regular fa-laptop"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fa-solid fa-hashtag"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="toggle_point">
+                                <div class="mode">
+                                    <div class="text">
+                                        <span class="active_dark">Dark</span>
+                                        <span>/</span>
+                                        <span class="active_light">Light</span>
+                                    </div>
+                                    <div id="light_icon">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                    </div>
+                                    <div class="on_icon"><a href="lightbulb-regular.svg">
+                                    </a>
+                                    </div>
+                                    <div class="menu_icon">
+                                        <i class="fa-solid fa-bars-staggered"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>
+
+                    <div class="inner_group">
+                        <div class="info_card">
+                            <div>
+                                <h2 class="title">Hi! I'm <span class="theme">Nikunj Mathur</span></h2>
+                                <p class="sub_title">Student @ SRMIST</p>
+                                <img src="Profile Pic.jpg" class="img">
+                                <p class="mail">nm2898@srmist.edu.in</p>
+                            </div>
+                            <div class="social_icons">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/nikunjmathur08/" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/nikunj-mathur-536b54281/" target="_blank">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://github.com/nikunjmathur08" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="my_btn">
+                                <a href="Profile-2.pdf" download="CV">Download CV</a>
+                            </div>
+                        </div>
+                        <div class="home">
+                            <div class="tag">
+                                <div class="box">
+                                    <span><i class="fa-regular fa-house"></i></span>
+                                    <span>Home</span>
+                                </div>
+                            </div>
+                            <div class="intro">
+                                <p class="sub_title">Hello there! I'm a</p>
+                                <h2 class="title">Web Developer <span>Enthusiast!</span></h2>
+                                <p class="des">I'm a fresher looking for opportunities to grow and thirve in my field of interest! Lookin' forward to meet & learn from you all.</p>
+                            </div>
+                            <div class="counter">
+                                <div class="item">
+                                    <h2>2 +</h2>
+                                    <p>YEARS OF <br />
+                                    EXPERIENCE IN <br />
+                                    CODING</p>
+                                </div>
+                                <div class="item">
+                                <h2>3</h2>
+                                <p>PROJECTS <br />
+                                COMPLETED SO <br />
+                                FAR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+
+    var light_icon = document.getElementById("light_icon");
+
+    light_icon.onclick = function(){
+        document.body.classList.toggle("light_theme");
+        if(document.body.classList.contains("light_theme")){
+            light_icon.src = "lightbulb-regular.svg"
+        }
+    }
+
+</script>
+
+</body>
+</html>
